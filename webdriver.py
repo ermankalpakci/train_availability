@@ -9,6 +9,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium import webdriver
+import os
 # Start a new instance of Chrome WebDriver
 # Configure Chrome options for headless mode
 def webdriverrun(departure, arrival, _date, num_passengers):
@@ -113,7 +114,7 @@ def webdriverrun(departure, arrival, _date, num_passengers):
         # Now you can use BeautifulSoup to parse the saved HTML page
         with open("page.html", "r", encoding="utf-8") as file:
             html_content = file.read()
-
+        os.remove("page.html")
         # Parse the HTML content with BeautifulSoup
         soup = BeautifulSoup(html_content, 'html.parser')
 
