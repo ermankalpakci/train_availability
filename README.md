@@ -21,11 +21,6 @@ This application allows you to find available train seats for your selected trav
 
 ## Installation
 
-Clone the repository:
-
-```bash
-https://github.com/ermankalpakci/train_availability
-```
 
 Install the required packages:
 
