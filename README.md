@@ -5,7 +5,7 @@ This application allows you to find available train seats for your selected trav
 
 
 
-## How to User
+## How to Use
 
 - Date Selection: Choose your preferred date of travel.
 
