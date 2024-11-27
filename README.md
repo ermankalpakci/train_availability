@@ -1,7 +1,7 @@
 
 # Available Train Seat Finder - TCDD
 
-This application allows you to find available train seats for your selected travel date, route, and number of passengers. Let’s say you want to travel somewhere, but there are no vacant seats available. This app continuously searches for seat availability.
+This application allows you to find available train seats for your selected travel date, route, and number of passengers. Let’s say you want to travel somewhere tomorrow, but there are no vacant seats available. This app continuously searches for seat availability.
 
 
 ## How to Use
