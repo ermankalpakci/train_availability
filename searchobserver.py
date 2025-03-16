@@ -107,7 +107,8 @@ class TrainSearchObserver(QObject):
                     # search.paused = False                    
                 if result.success:
                     self.search_completed.emit(search, result)
-                    self.send_email(search)
+                    if search.email is not None and search.password is not None:
+                        self.send_email(search)
                 else:
                     self.error_occurred.emit(search, result)
 

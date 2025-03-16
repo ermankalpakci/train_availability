@@ -399,10 +399,11 @@ class TrainAlertApp(QWidget):
             self.start_button_enabled(True)
             return
         
-        if not re.match(r'^[a-zA-Z0-9._%+-]+@gmail\.com$', self.email_input.text()):
-            QMessageBox.critical(self, "Error", "Check your email")
-            self.start_button_enabled(True)
-            return
+        if not self.email_input:
+            if not re.match(r'^[a-zA-Z0-9._%+-]+@gmail\.com$', self.email_input.text()):
+                QMessageBox.critical(self, "Error", "Check your email")
+                self.start_button_enabled(True)
+                return
 
         selected_date = self.date_entry.date()
         today = QDate.currentDate()
