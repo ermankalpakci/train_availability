@@ -286,11 +286,9 @@ class TrainAlertApp(QWidget):
         mail_container = QHBoxLayout()
 
         self.email_input = QLineEdit()
-        self.email_input.setText("ermankalpakci@gmail.com")
         email_layout = self.create_labeled_input("Email:", self.email_input)
 
         self.password_input = QLineEdit()
-        self.password_input.setText("aqjjxqsxklfdpubt")
         password_layout = self.create_labeled_input("App password:", self.password_input)
 
 
