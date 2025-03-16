@@ -1,4 +1,9 @@
-selenium
-beautifulsoup4
-webdriver-manager
 PyQt5
+selenium
+requests
+json
+logging
+sqlite3
+smtplib
+email
+concurrent.futures
