@@ -45,6 +45,9 @@ class TrainSearch(QObject):
         if email is not None and password is not None:
             self.email = self.validate_email(email)
             self.password = password
+        else:
+            self.email = None
+            self.password = None
         self.result: Optional[SearchResult] = None
 
 
