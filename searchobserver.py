@@ -90,8 +90,6 @@ class TrainSearchObserver(QObject):
                         return search.result
                     
                     time.sleep(30)
-
-            
         except Exception as e:
             search.result = SearchResult(message=f"Error: {str(e)}", success=False)
             return search.result
@@ -113,6 +111,7 @@ class TrainSearchObserver(QObject):
                     self.error_occurred.emit(search, result)
 
         except Exception as e:
+            search.result = SearchResult(message=f"Error: {str(e)}", success=False)
             self.error_occurred.emit(search, future)
 
     def shutdown(self):
