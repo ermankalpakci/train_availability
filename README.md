@@ -12,7 +12,7 @@ A PyQt5-based desktop application to search for available seats on Turkish State
   - Passenger count (1-11)
   - Train type preferences (YHT only, transfers, etc.)
   - Seat class options (business, sleeper, etc.)
-- **Email Notifications**: Receive alerts via Gmail (app password required)(https://myaccount.google.com/apppasswords)
+- **Email Notifications**: Receive alerts via Gmail (app password required, optional)(https://myaccount.google.com/apppasswords)
 - **Background Processing**: Asynchronous Selenium authentication
 - **Search Management**:
   - Multiple simultaneous searches
